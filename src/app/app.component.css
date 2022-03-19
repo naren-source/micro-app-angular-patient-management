@@ -1,0 +1,33 @@
+#leftPane{
+    height: 100vh;
+    background-color: #357e35 !important;
+}
+
+#rightPane{
+    /* height: 100vh; */
+    background-color: whitesmoke !important;
+}
+
+#brand{
+    color: #6fc36f !important;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: transparent !important;
+}
+
+.tabs{
+    color: white !important;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 1rem;
+    /* margin-left: 1rem; */
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: #6fc36f;
+}
+
+.active{
+    background-color: #6fc36f !important;
+}

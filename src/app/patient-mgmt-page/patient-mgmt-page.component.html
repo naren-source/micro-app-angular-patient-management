@@ -1,0 +1,52 @@
+<div class="row page-title">
+  <h1>{{pageTitle}}</h1>
+</div>
+<div class="col">
+  <div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fas fa-search fa-2x"></i></span>
+    </div>
+    <input type="search" class="form-control" [placeholder]="searchBarPlaceholder" (keyup)="searchThisValue($event)">
+  </div>
+</div>
+<div class="col">
+  <table class="table">
+    <tr>
+      <th scope="col">Barcode</th>
+      <th scope="col">Activation</th>
+      <th scope="col">Report release</th>
+      <th scope="col">Rejection</th>
+      <th scope="col">Name</th>
+      <th scope="col">Result</th>
+      <th scope="col" *ngIf="circleOrg">Result Type</th>
+      <th scope="col" *ngIf="circleOrg">Patient Id</th>
+    </tr>
+    <tr *ngFor="let item of paginatedList">
+      <td scope="col">{{item.barcode}}</td>
+      <td scope="col">{{item.activationTime}}</td>
+      <td scope="col">{{item.resultTime? item.resultTime : '-'}}</td>
+      <td scope="col">{{item.rejection? item.Rejection : '-'}}</td>
+      <td scope="col">{{item.name}}</td>
+      <td scope="col">{{item.result? item.result : '-'}}</td>
+      <td scope="col" *ngIf="circleOrg">{{item.resultType}}</td>
+      <td scope="col" *ngIf="circleOrg">{{item.patientId}}</td>
+    </tr>
+  </table>
+</div>
+<div class="col">
+  <ul class="pagination">
+    <li class="page-item" >
+        <button class="page-link" (click)="changePage(-1)" [disabled]="currentPage==1? true: false">
+            <span>&laquo;</span>
+        </button>
+    </li>
+    <li class="page-item">
+        <a class="page-link">{{currentPage}}</a>
+    </li>
+    <li class="page-item">
+        <button class="page-link" (click)="changePage(1)" [disabled]="entriesInCurrentPage<entriesPerPage? true: false">
+            <span>&raquo;</span>            
+        </button>
+    </li>
+</ul>
+</div>
