@@ -28,10 +28,10 @@ Filename: data.service.ts <br>
 path: src\app\data.service.ts <br>
 
 HTML & CSS - Patient Management UI page: <br>
-HTML - filename: patient-mgmt-page.component.html <br>
+Filename: patient-mgmt-page.component.html <br>
 path: src\app\patient-mgmt-page\patient-mgmt-page.component.html <br>
 
-CSS - filename: patient-mgmt-page.component.css <br>
+Filename: patient-mgmt-page.component.css <br>
 path: src\app\patient-mgmt-page\patient-mgmt-page.component.css <br>
 
 Test case coverage: <br>
