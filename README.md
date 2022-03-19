@@ -1,24 +1,23 @@
-Prenetics Patient Management Application
+**Prenetics Patient Management Application**
 
 This assignment is done using Angular.
 
-Assignment URLs:
+**Assignment URLs:**
 https://github.com/Prenetics/engineering/blob/main/frontend.md
 https://github.com/Prenetics/prenetics-backend-assignment
 
-Technical Stack:
+**Technical Stack:**
 Framework:  Angular
 Languages: Typescript, HTML, CSS, Bootstrap.
 
-Queries Covered:
+**Queries Covered:**
 Patient Management UI page implementation with styling.
 Search functionality implementation - single & multiple criteria
 Pagination functionality
 Page view details based on organisation - Prenetics & Circle
 Test case coverage for the application
 
-Main Files:
-
+**Main Files:**
 Typescript:
 Search functionality & pagination:
 Filename: patient-mgmt-page.component.ts
@@ -39,7 +38,7 @@ Test case coverage:
 Filename: patient-mgmt-page.component.spec.ts
 path: src\app\patient-mgmt-page\patient-mgmt-page.component.spec.ts
 
-Other supporting Files:
+**Other supporting Files:**
 src\app\app.component.ts
 src\app\app.component.css
 src\app\app.component.html
